@@ -1,0 +1,10 @@
+venv/*
+venv/**
+
+config/secrets.json
+
+*.pyc
+
+.DS_Store
+
+.coverage
