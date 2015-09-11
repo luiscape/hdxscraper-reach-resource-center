@@ -12,7 +12,7 @@ def LoadCountryList(path='data/countries.csv'):
   out = []
   try:
     with open(path, 'rb') as f:
-      data = csv.reader(f)
+      data = csv.DictReader(f)
       for row in data:
         out.append(row)
 

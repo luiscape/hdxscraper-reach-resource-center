@@ -32,3 +32,8 @@ class CheckLoadCountryList(unittest.TestCase):
   def test_load_country_returns_array(self):
     d = Load.LoadCountryList()
     assert type(d) is list
+
+  def test_country_list_contains_the_right_schema(self):
+    d = Load.LoadCountryList()
+    assert d[0].get('iso', None) != None
+    assert d[0].get('name', None) != None
